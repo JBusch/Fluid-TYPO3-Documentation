@@ -2,14 +2,13 @@
 <html class="no-js">
   <head>
     <meta charset="utf-8">
-    <title>fpt3 docs</title>
+    <title>FluidTYPO3 docs</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <link rel="shortcut icon" href="/favicon.ico">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
-
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -23,58 +22,129 @@
 
 
     <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <h3 class="text-muted">fpt3 docs</h3>
+      <div class="row">
+        <header>
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <h1>Fluid TYPO3 Documentation Structure</h1>
+            <h2>Version 0.0.1</h2>
+          </div>
+        </header>
       </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <h3>Table of content</h3>
+          <ol>
+            <li><h4>Introduction</h4>
+              <ul>
+                <li>
+                  <h5>1.1 What is Fluid Powered TYPO3(FluidTYPO3)?</h5>
+                  <b><em>
+                    If you just want to try out <a href="getting-started-templating.html">templating</a> or <a href="getting-started-content">custom content elements creation</a> with FluidTYPO3 please visit our <a href="getting-started.html">getting started guides</a>
 
-      <div class="jumbotron">
-        <h1>'Allo, 'Allo!</h1>
-        <p class="lead">Always a pleasure scaffolding your apps.</p>
-        <p><a class="btn btn-lg btn-success" href="#">Splendid! <span class="glyphicon glyphicon-ok"></span></a></p>
-      </div>
+                  --> guides should be seperate imo
+                  </em></b>
+                  <br><br>
+                  <b><em>* Short, clear and focused description on what FluidTYPO3 is all about <br>
+                      * Something like: <br>
+                      * Fluid powered TYPO3 is a collection of extensions which are aiming at making templating and creating custom content elements in TYPO3 CMS fast, flexible, easy and robust</em></b>
+                </li>
+                <li><h5>1.2 The FluidTYPO3 extension familiy</h5>
+                  <b><em>
+                      short overview about which extension is needed for what. <br>
+                      something like:
+                    </em></b>
+                    <ul>
+                      <li><h6>EXT:flux</h6>
+                      Flux is a replacement API for TYPO3 FlexForms - with interfaces for Fluid, PHP and TypoScript - Flux is a dependency for:
+                      <ul>
+                        <li>EXT:fluidpages</li>
+                        <li>EXT:fluidcontent</li>
+                        <li>fluidcontent_core</li>
+                      </ul>
+                      </li>
+                      <li><h6>EXT:fluidpages</h6>
+                        FluidPages enables page template selection and rendering á la TemplaVoila - but using Fluid templates. It uses Flux to enable highly dynamic configuration of variables used when rendering the template.</li>
+                      <li><h6>EXT:fluidcontent</h6>
+                        FluidContent lets you write custom content elements based on Fluid templates. Each content element and its possible settings are contained in a single Fluid template file. Whole sets of files can be registered and placed in its own tab in the new content element wizard, letting you group your content elements.</li>
+                        <li>EXT:fluidcontent_core
+                          FluidContentCore is a replacement for CSS_STYLED_CONTENT</li>
+                      <li><h6>EXT:vhs</h6> 
+                        VHS is a libray extensions which provides assistance tools like viewhelpers and special classes for Extbase/Fluid.
+                        A collection of ViewHelpers to perform rendering tasks which are not natively supported by Fluid </li>
+                      <li><h6>EXT:builder</h6>
+                        TYPO3 cli-script tool for creating FluidTYPO3 based extension
+                      </li>
+                      <li><h6>EXT:site</h6>
+                       SiteKickstarter is a fire-and-forget install helper which when installed will install every standard FluidTYPO3 dependency - and when "deployed", creates the pages, mount points, TypoScript and configuration you need to run a FluidTYPO3-based site.</li>
+                    </ul>
+                </li>
+                <br><br>
+               <b><em>Optional:</em></b>
+                <li><h5>1.4 Why should i use FluidTYPO3</h5></li>
+                <li><h5>1.5 Who uses FluidTYPO3</h5></li>
+              </ul>
+            </li>
+            <li><h4>Installation</h4>
+                <b><em>
+                  well, do we really need this section?<br>
+                  wouldn't it be enough to point to TER here?
+                </em></b>
+            </li>
+            <li><h4>General needed knowledge <b><em>better heading plz ;)</em></b></h4>
+               <ul>
+                  <li>Explanation of the provider extension (like mysite from EXT:Site)</li>
+                 <li>Basic Setup(TS)</li>
+                 <li>Using Settings?</li>
+                 <li><b><em>
+                   not sure what to add here right know
+                 </em></b></li>
+               </ul>
+            </li>
 
-      <div class="row marketing">
-        <div class="col-lg-6">
-          <h4>HTML5 Boilerplate</h4>
-          <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
-
-          <h4>Sass</h4>
-          <p>Sass is a mature, stable, and powerful professional grade CSS extension language.</p>
-
-
-          <h4>Bootstrap</h4>
-          <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
-
+            <li><h4>Front-End Guide</h4>
+                <ul>
+                  <li>
+                    <h5>Templating with FluidTYPO3</h5>
+                  </li>
+                  <li>
+                    <h5>Custom content elements with FluidTYPO3</h5>
+                  </li>
+                </ul>
+            </li>
+            <li><h4>Back-End Guide (Extension Development)</h4>
+              <ul>
+                <li>This would need your input, since i'm a FE dude... ;)</li>
+              </ul>
+            </li>
+            <li><h4>Appendix</h4>
+              <ul>
+                 <li><h5>Tools</h5></li>
+                 <li><h5>Workflow</h5></li>
+              </ul>
+            </li>
+          </ol>
 
         </div>
       </div>
-
-      <div class="footer">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
-      </div>
-
     </div>
-
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/button.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/carousel.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/collapse.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/dropdown.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/transition.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/scrollspy.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
-
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='//www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
-    </script>
 
         <!-- build:js({app,.tmp}) scripts/main.js -->
         <script src="scripts/main.js"></script>
